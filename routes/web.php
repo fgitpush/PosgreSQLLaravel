@@ -18,15 +18,3 @@ Route::get('/', function () {
 });
 Route::get('users', 'Controller@index');
 
-Route::get('items', 'ItemController@index');
-Route::get('items/{id}', 'ItemController@show');
-Route::post('items', 'ItemController@store');
-Route::put('items/{id}', 'ItemController@update');
-Route::delete('items/{id}', 'ItemController@delete');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
